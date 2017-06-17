@@ -19,7 +19,7 @@ Create a website where users may enter a GitHub username into a form, submit it,
 
 ## Setup/Installation Requirements
 1.  Open PowerShell
-2.  $ git clone https://github.com/collinsmwiti/github-project.github.io.git
+2.  $ git clone https://github.com/collinsmwiti/github-project
 3.  $ cd github-project
 4.  $ npm install
 5.  $ bower install
