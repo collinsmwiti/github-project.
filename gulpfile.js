@@ -4,6 +4,9 @@ var gulp = require('gulp'); /*Dependency used for displaying in the terminal*/
 var browserify = require('browserify'); /*Dependency used for browserification*/
 var source = require('vinyl-source-stream'); /*Dependency used after building app.js*/
 var concat = require('gulp-concat'); /*Dependency used for concatination*/
+var uglify = require('gulp-uglify'); /*Dependency used for minification*/
+var utilities = require('gulp-util'); /*Dependency used in utilities functions*/
+var buildProduction = utilities.env.production; /*Dependency used in utilities function for building production*/
 
 /*Task used for displaying in the console*/
 gulp.task('myTask', function() {
@@ -25,4 +28,20 @@ gulp.task('jsBrowserify', ['concatInterface'], function() {
     .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build/js'));
+});
+
+/*task used for minification*/
+gulp.task('minifyScripts', ['jsBrowserify'], function() {
+  return gulp.src('./build/js/app.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js'));
+});
+
+/*task used for building,minifying and browserifying the built production*/
+gulp.task('build', function() {
+  if (buildProduction) {
+    gulp.start('minifyScripts');
+  } else {
+    gulp.start('jsBrowserify');
+  }
 });
