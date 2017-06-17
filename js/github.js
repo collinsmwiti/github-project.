@@ -7,7 +7,15 @@ var apiKey = require('./../.env').apiKey;
 Repos = function() {
 
 };
-
+// This is a prototype to enable user access/
+Repos.prototype.getUser = function(name, displayFunction) {
+  $.get('https://api.github.com/users/' + name + '?access_token=' + apiKey).then(function(users) {
+    displayFunction(users);
+  }).fail(function(error) {
+    $('.showUser').text("This Username " + name + " is " + error.responseJSON.message + "." +
+      "Please Enter the Correct Username");
+  });
+};
 // This is a prototype to enable the repository access //
 Repos.prototype.getRepos = function(name, displayFunction) {
   $.get('https://api.github.com/users/' + name + '/repos?access_token=' + apiKey).then(function(repos) {
