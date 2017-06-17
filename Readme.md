@@ -1,5 +1,9 @@
 ## Synopsis
+<<<<<<< HEAD
 This project is a gulp project which entails about website used to show github repositories.
+=======
+This project is a gulpfile project which entails about website used to show github repositories.
+>>>>>>> c10beaa278e8ab94d5f568bafa0e01bd42bd1a13
 
 ## Code Example
 Kindly to access my codes clone the repository.
@@ -8,7 +12,11 @@ Kindly to access my codes clone the repository.
 My motivation to build this project was to improve myself and become better each and everyday.
 
 ## Contributors
+<<<<<<< HEAD
 Majority of the work I have done is for educational purposes. Kindly for any correction or improvement, contact me at mwiticmutumamwenda@gmail.com
+=======
+Majority of the work I have done solo, kindly for any correction or improvement, contact me at mwiticmutumamwenda@gmail.com
+>>>>>>> c10beaa278e8ab94d5f568bafa0e01bd42bd1a13
 
 ## License
 The project is under license by MIT
@@ -19,7 +27,7 @@ Create a website where users may enter a GitHub username into a form, submit it,
 
 ## Setup/Installation Requirements
 1.  Open PowerShell
-2.  $ git clone https://github.com/collinsmwiti/github-project.github.io.git
+2.  $ git clone https://github.com/collinsmwiti/github-project
 3.  $ cd github-project
 4.  $ npm install
 5.  $ bower install

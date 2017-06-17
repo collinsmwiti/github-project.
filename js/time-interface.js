@@ -1,4 +1,5 @@
-//to show time when one checked the github projects
+// to show the time when the user has searched for the repositories
+
 $(document).ready(function() {
   $('#time').text(moment());
 });
