@@ -1,3 +1,14 @@
+// this is for export//
+var Repos = require('./../js/github.js').reposModule;
+
+//this is a code used to display user within the website//
+var displayUser = function(user) {
+  // users.forEach(function(user) {
+  $('ul#userPic').empty();
+  $('ul#userPic').append("<li>" + user.name + "</li > ");
+  // });
+};
+
 //this is a code used to display repos within the website//
 var displayData = function(repos) {
   $('ul#repoUrl').empty();
