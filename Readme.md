@@ -1,5 +1,5 @@
 ## Synopsis
-This project is an angular 2 project which entails about website used to show github repositories.
+This project is a gulpfile project which entails about website used to show github repositories.
 
 ## Code Example
 Kindly to access my codes clone the repository.
