@@ -1,5 +1,5 @@
 ## Synopsis
-This project is an angular 2 project which entails about website used to show github repositories.
+This project is a gulp project which entails about website used to show github repositories.
 
 ## Code Example
 Kindly to access my codes clone the repository.
@@ -7,11 +7,8 @@ Kindly to access my codes clone the repository.
 ## Motivation
 My motivation to build this project was to improve myself and become better each and everyday.
 
-## Tests
-Kindly access my gists I have a sample code for one of my projects, you can run it through console.log() to test.
-
 ## Contributors
-Majority of the work I have done solo, kindly for any correction or improvement, contact me at collotush@gmail.com
+Majority of the work I have done is for educational purposes. Kindly for any correction or improvement, contact me at mwiticmutumamwenda@gmail.com
 
 ## License
 The project is under license by MIT
